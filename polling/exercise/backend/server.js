@@ -28,7 +28,7 @@ app.get("/poll", function (req, res) {
 
 app.post("/poll", function (req, res) {
   const { user, text } = req.body;
-  console.log("body", req);
+
   msg.push({
     user: user || "anonymous",
     text: text || "...",
